@@ -1,2 +1,18 @@
+# for debug 
 *.zip
 INPUT
+*.dSYM
+
+# hw1
+ackerman
+powerset
+
+# hw2
+Solitaire
+
+# hw3
+program
+
+# hw4
+costco
+solitaire
