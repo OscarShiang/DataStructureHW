@@ -14,17 +14,14 @@ int collapsingFind(int num, vector <int> &tree) {
 		cnt ++;
 	}
 
-	for (trail = tree[num]; trail != root; trail = lead) {
+	for (trail = num; trail != root; trail = lead) {
 		lead = tree[trail];
-		tree[trail] = root;
+		if (tree[trail] != root) {
+			tree[trail] = root;
+			cnt ++;
+		}
 	}
-
-	if (tree[num] == root) 
-		return cnt;
-	else {
-		tree[num] = root;
-		return cnt + 1;
-	}
+	return cnt;
 }
 
 void heightUnion(int a, int b, vector <int> &tree) {
