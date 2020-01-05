@@ -1,4 +1,4 @@
-TEST=../test_data.txt
+TEST=../hw10.txt
 
 all: longer original shorter
 
